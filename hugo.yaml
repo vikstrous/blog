@@ -2,3 +2,4 @@ baseURL: 'https://port3000.viktor.anchorlabs.dev/'
 languageCode: 'en-us'
 title: "Viktor Stanchev's blog"
 theme: 'PaperMod'
+cleanDestinationDir: true
