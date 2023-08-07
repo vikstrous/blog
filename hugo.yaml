@@ -5,10 +5,15 @@ theme: 'PaperMod'
 cleanDestinationDir: true
 params:
     homeInfoParams:
-        # Title: Viktor Stanchev's blog
-        Content: WIP! See https://blog.viktorstanchev.com for now.
-    # socialIcons: # optional
-    #     - name: "<platform>"
-    #         url: "<link>"
+        Title: Viktor Stanchev
+        # Content: WIP! See https://blog.viktorstanchev.com for now.
+        Content: "If you can think -- and not make thoughts your aim;"
+    socialIcons: # optional
+        - name: "twitter"
+          url: "https://twitter.com/vikstrous"
     #     - name: "<platform 2>"
     #         url: "<link2>"
+    editPost:
+        URL: "https://github.com/vikstrous/blog/tree/master/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
