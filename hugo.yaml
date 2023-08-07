@@ -13,14 +13,11 @@ params:
     ShowShareButtons: true
     homeInfoParams:
         Title: Viktor Stanchev
-        # Content: WIP! See https://blog.viktorstanchev.com for now.
         Content: "If you can think -- and not make thoughts your aim;"
-    socialIcons: # optional
+    socialIcons:
         - name: "twitter"
           url: "https://twitter.com/vikstrous"
-    #     - name: "<platform 2>"
-    #         url: "<link2>"
     editPost:
         URL: "https://github.com/vikstrous/blog/tree/master/content"
-        Text: "Suggest Changes" # edit text
-        appendFilePath: true # to append file path to Edit link
+        Text: "Suggest Changes"
+        appendFilePath: true
