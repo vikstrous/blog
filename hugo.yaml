@@ -5,7 +5,12 @@ theme: 'PaperMod'
 cleanDestinationDir: true
 permalinks:
   posts: "/posts/:slug/"
+menu:
+    main:
+        - name: Archive
+          url: archives
 params:
+    ShowShareButtons: true
     homeInfoParams:
         Title: Viktor Stanchev
         # Content: WIP! See https://blog.viktorstanchev.com for now.
