@@ -1,7 +1,7 @@
 ---
 title: "Practical Policy Enforcement with CUE"
 date: 2023-06-06T00:00:00Z
-draft: true
+draft: false
 ---
 
 I have been using [CUE](https://cuelang.org/) for over 2 years and I’ve found it to be incredibly good at defining policies. CUE is an elegant configuration language because of the guarantees that it can express. It has many additional uses such as applying policies on existing configurations, whether they are written in CUE or in another format like JSON or YAML. Let’s take a look at some easy and practical policy enforcement applications for CUE for Kubernetes, OpenAPI and Terraform.
