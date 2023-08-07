@@ -1,5 +1,6 @@
 ---
 title: "Four ways to extend the go 1.21 slog Logger"
+slug: "four-ways-to-extend-the-go-1-21-slog-logger"
 date: 2023-08-06T00:00:00Z
 draft: false
 ---

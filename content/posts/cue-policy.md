@@ -1,5 +1,6 @@
 ---
 title: "Practical Policy Enforcement with CUE"
+slug: "practical-policy-enforcement-with-cue"
 date: 2023-06-06T00:00:00Z
 draft: false
 ---

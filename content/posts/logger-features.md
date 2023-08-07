@@ -1,5 +1,6 @@
 ---
 title: "Getting the most out of the Go 1.21 slog package"
+slug: "getting-the-most-out-of-the-go-1-21-slog-package"
 date: 2023-07-25T00:00:00Z
 draft: false
 ---

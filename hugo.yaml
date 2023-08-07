@@ -3,6 +3,8 @@ languageCode: 'en-us'
 title: "Viktor Stanchev's blog"
 theme: 'PaperMod'
 cleanDestinationDir: true
+permalinks:
+  posts: "/:year/:month/:day/:slug/"
 params:
     homeInfoParams:
         Title: Viktor Stanchev
