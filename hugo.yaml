@@ -11,6 +11,7 @@ menu:
           url: archives
 params:
     ShowShareButtons: true
+    ShowCodeCopyButtons: true
     homeInfoParams:
         Title: Viktor Stanchev
         Content: "If you can think -- and not make thoughts your aim;"
