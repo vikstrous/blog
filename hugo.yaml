@@ -3,3 +3,12 @@ languageCode: 'en-us'
 title: "Viktor Stanchev's blog"
 theme: 'PaperMod'
 cleanDestinationDir: true
+params:
+    homeInfoParams:
+        # Title: Viktor Stanchev's blog
+        Content: WIP! See https://blog.viktorstanchev.com for now.
+    # socialIcons: # optional
+    #     - name: "<platform>"
+    #         url: "<link>"
+    #     - name: "<platform 2>"
+    #         url: "<link2>"
