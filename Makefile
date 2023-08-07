@@ -4,3 +4,6 @@ build:
 	hugo
 serve-public:
 	cd public && python3 -m http.server --bind 0.0.0.0 3000
+
+# How to create a new page?
+# `hugo new posts/blah-blah.md`

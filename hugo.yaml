@@ -1,4 +1,4 @@
-baseURL: 'http://blog2.viktorstanchev.com/'
+baseURL: 'https://viktorstanchev.com/'
 languageCode: 'en-us'
 title: "Viktor Stanchev's blog"
 theme: 'PaperMod'
