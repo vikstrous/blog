@@ -14,10 +14,16 @@ params:
     ShowCodeCopyButtons: true
     homeInfoParams:
         Title: Viktor Stanchev
-        Content: "If you can think -- and not make thoughts your aim;"
+        Content: "Founding Engineer at [Anchorage Digital](https://www.anchorage.com/)\n\nI love feedback! Email me your ideas."
     socialIcons:
+        - name: "github"
+          url: "https://github.com/vikstrous"
         - name: "twitter"
           url: "https://twitter.com/vikstrous"
+        - name: "linkedin"
+          url: "https://www.linkedin.com/in/viktorstanchev/"
+        - name: "email"
+          url: "mailto:blog@viktorstanchev.com"
     editPost:
         URL: "https://github.com/vikstrous/blog/tree/master/content"
         Text: "Suggest Changes"
