@@ -25,7 +25,7 @@ I am not yet aware of the benefits and limitations of HTMX SPAs, but I can see t
 
 ## Flexibility: good and bad
 
-{{< figure src="/images/exploring-htmx-1.png" title="Discord channel list" height="600px" >}}
+{{< figure src="/images/exploring-htmx-1.png" title="Discord channel list" height="450px" >}}
 
 Clearly, HTMX is a very flexible technology. It is not very opinionated, except in its belief that the browser should act as a hypermedia client and the API should be a hypermedia one (generally HTML). This approach allows for a wide range of possibilities to be explored, and I am excited to see how HTMX develops further. However, this flexibility also means that there are many ways to accomplish the same thing. While there is a list of examples available [on the HTMX website](https://htmx.org/examples/), I personally feel that they are not sufficient. I have yet to learn the best practices, and it is possible that they have not been fully developed yet. It would be helpful to have some guidelines on what to do and what not to do with HTMX. I am concerned that sharing components and best practices might be challenging due to their strong dependence on the server-side language, templating system, and web framework being used. The image that displays the HTMX Discord channel list highlights the level of fragmentation that exists between different back-end languages. The recommendation from the authors appears to be to leverage an existing web 1.0 server-side rendering framework.
 
