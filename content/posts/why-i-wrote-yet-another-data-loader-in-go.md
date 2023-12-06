@@ -38,7 +38,7 @@ And using it looks like:
 ```go
 loader.Load(key)
 ```
-Very simple and elegant. There's really nothing wrong with it except that it requires code generation. It was a big inspiration for me when designing my data loader.
+Very simple and elegant. There's really nothing wrong with it except that it requires code generation. To have such a nice API, it embeds the specific types of the inputs and outputs in the generated code. It was a big inspiration for me when designing my data loader.
 
 When generics were added to the Go language, I realized that it was possible to get rid of the code generation part, which simplifies the build process and makes it easier to use.
 
@@ -69,7 +69,7 @@ And using it looks like:
 loader.Load(ctx, key)()
 ```
 
-Usage is a bit more awkward with an extra function call required to get the value, but very similar to dataloaden. The part I'm still not happy with in v7 is the initialization. There are 6 places where types have to be explicitly specified. I'm also not a fan of the result type, but that might be personal state. My implementation of a loader doesn't require explicit type parameters anywhere.
+Usage is a bit more awkward with an extra function call required to get the value, but very similar to dataloaden. The part I'm still not happy with in v7 is the initialization. There are 6 places where types have to be explicitly specified. I'm also not a fan of the result type, but that might be personal opinion. My implementation of a loader doesn't require explicit type parameters anywhere.
 
 ## yckao/go-dataloader
 
