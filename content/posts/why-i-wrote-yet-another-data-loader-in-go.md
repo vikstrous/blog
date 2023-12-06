@@ -124,6 +124,10 @@ loader.Load(ctx, key)
 
 The most important thing to note is that there are no explicit types anywhere. It also doesn't use a Result type. It uses an options pattern to make it more extensible and that came in handy when adding tracing support. It has open telemetry tracing built in that's fairly easy to turn on. And finally, it performs better.
 
-Check out the [readme](https://github.com/vikstrous/dataloadgen) for the benchmarks. I spent a considerable amount of time optimizing my code and writing benchmarks for all 4 packages to prove to myself that it's not worse in any way.
+I've been using this package in production at [Anchorage Digital](https://www.anchorage.com/) since 2022 and haven't had any issues so far. Check out the [readme](https://github.com/vikstrous/dataloadgen) for the results of the benchmarks. I spent a considerable amount of time optimizing my code and writing benchmarks for all 4 packages to prove to myself that it's not worse in any way. I would love to hear if others also find it useful. [Try it out!](https://github.com/vikstrous/dataloadgen)
 
-I've been using this package in production at [Anchorage Digital](https://www.anchorage.com/) since 2022 and haven't had any issues so far. I would love to hear if others also find it useful. Try it out!
+![benchmark](/images/why-i-wrote-yet-another-data-loader-in-go/init.png)
+![benchmark](/images/why-i-wrote-yet-another-data-loader-in-go/cached.png)
+![benchmark](/images/why-i-wrote-yet-another-data-loader-in-go/unique_keys.png)
+![benchmark](/images/why-i-wrote-yet-another-data-loader-in-go/10_concurrently.png)
+![benchmark](/images/why-i-wrote-yet-another-data-loader-in-go/all_in_one_request.png)
