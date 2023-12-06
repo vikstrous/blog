@@ -3,7 +3,7 @@ title: "Exploring HTMX and the Revival of Hypermedia"
 date: 2023-10-14T00:00:00Z
 ---
 
-I recently taught myself HTMX, and I'm excited to see its growth because it revives an old idea that the world has forgotten: hypermedia.. Hypermedia was behind the original growth of the internet and, through HTMX it might be able to bring a new level of efficiency and productivity to a world tired of JavaScript single page applications and 10MB web pages. It’s promoted as a way to make back-end developers more productive by learning a little bit of front-end. While I have some concerns about it that I hope to be addressed over time, but let’s start by looking at what it is.
+I recently taught myself HTMX, and I'm excited to see its growth because it revives an old idea that the world has forgotten: hypermedia.. Hypermedia was behind the original growth of the internet and, through HTMX it might be able to bring a new level of efficiency and productivity to a world tired of JavaScript single page applications and 10MB web pages. It’s promoted as a way to make back-end developers more productive by learning a little bit of front-end. I have some concerns about it that I hope to be addressed over time, but let’s start by looking at what it is.
 
 [HTMX](https://htmx.org/) emerged around 2020, and in 2022, [a book](https://hypermedia.systems/) was published that delves into the history and philosophy of HTMX. It also includes a comprehensive tutorial on progressively enhancing a web 1.0 application using HTMX. I highly recommend this book to anyone interested in learning more about HTMX.
 
