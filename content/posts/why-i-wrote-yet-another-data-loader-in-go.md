@@ -1,7 +1,7 @@
 ---
 title: "Why I Wrote Yet Another a Data Loader in Go"
 date: 2023-12-06T00:00:00Z
-draft: true
+draft: false
 ---
 
 There are three other packages already that implement data loaders in go, but after using them for a while, I wasn't happy and decided to write my own. But why?
