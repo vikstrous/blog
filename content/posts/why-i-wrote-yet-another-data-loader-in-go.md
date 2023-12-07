@@ -124,7 +124,7 @@ loader.Load(ctx, key)
 
 The most important thing to note is that there are no explicit types anywhere. It also doesn't use a Result type. It uses an options pattern to make it more extensible and that came in handy when adding tracing support. It has open telemetry tracing built in that's fairly easy to turn on. And finally, it performs better.
 
-I spent a considerable amount of time optimizing the code and writing benchmarks for all 4 packages to prove to myself that it's not worse in any way. I would love to hear if others also find it useful. Try it out!
+I spent a considerable amount of time optimizing the code and writing benchmarks for all 4 packages to prove to myself that it's not worse in any way. I would love to hear if others also find it useful. [Try it out!](https://github.com/vikstrous/dataloadgen)
 
 Check out the [readme](https://github.com/vikstrous/dataloadgen) for the results of the benchmarks. They are also copied below:
 
