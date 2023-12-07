@@ -1,5 +1,5 @@
 ---
-title: "Why I Wrote Yet Another a Data Loader in Go"
+title: "Why I Wrote Yet Another Data Loader in Go"
 date: 2023-12-06T00:00:00Z
 draft: false
 ---
