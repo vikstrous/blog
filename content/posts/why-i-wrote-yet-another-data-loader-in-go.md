@@ -101,7 +101,7 @@ loader.Load(ctx, key).Get(ctx)
 With all this context, let's look at example usage of [dataloadgen](https://github.com/vikstrous/dataloadgen). It's very similar to Dataloaden. The idea was basically "dataloaden with generics".
 
 ```go
-return dataloadgen.NewLoader(func(_ context.Context, keys []int) ([]User, []error) {
+loader := dataloadgen.NewLoader(func(_ context.Context, keys []int) ([]User, []error) {
     users := make([]User, len(keys))
     errors := make([]error, len(keys))
     for i, key := range keys {
