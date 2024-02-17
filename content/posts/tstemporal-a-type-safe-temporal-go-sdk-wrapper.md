@@ -30,7 +30,7 @@ Workflows:
 Schedules:
 
 * Set arguments with the right types
-* Can be 'set' upon application startup, automatically applying the intended effect to the schedule's state on the cluster
+* Can be set upon application startup, automatically applying the intended effect to the schedule's state on the cluster
 
 Queries and updates:
 
@@ -116,6 +116,6 @@ func helloActivity(ctx context.Context, _ struct{}) (struct{}, error) {
 }
 ```
 
-Be warned that in this first iteration not all temporal features are easily accessible and there are no escape hatches from the safety. I highly recommend it when starting a new project or service, but it may be difficult to retrofit into existing services if they use the full power of temporal. I'm looking for feedback on how to allow for incremental adoption and how to support more of temporal's features.
+Be warned that in this first iteration not all Temporal features are easily accessible and there are no escape hatches from the safety. I highly recommend it when starting a new project or service, but it may be difficult to retrofit into existing services if they use the full power of Temporal. I'm looking for feedback on how to allow for incremental adoption and how to support more of Temporal's features.
 
-If you are ready to try it anyway, head over to https://github.com/vikstrous/tstemporal!
+If you are ready to try it anyway, head over to https://github.com/vikstrous/tstemporal! Open issues if you have any feedback.
