@@ -5,9 +5,9 @@ date: 2024-02-16T00:00:00Z
 
 Are you using [Temporal](temporal.io) and writing workflows in Go using their Go SDK? If so, I have something for you. Otherwise feel free to skip this blog post.
 
-I crated a type-safe wrapper around the Temporal Go SDK called [tstemporal](https://github.com/vikstrous/tstemporal). It helps you avoid many common mistakes when working with temporal workflows.
+I created a type-safe wrapper around the Temporal Go SDK called [tstemporal](https://github.com/vikstrous/tstemporal). It helps you avoid many common mistakes when working with Temporal workflows.
 
-The native SDK is powerful and flexible. This wrapper is not powerful and not flexible, but it's opinionated and safe. Here are some of the guarantees provided.
+The native SDK is powerful and flexible. Although this wrapper sacrifices some power and flexibility, it offers safety through its opinionated design.
 
 Workers:
 
@@ -29,8 +29,8 @@ Workflows:
 
 Schedules:
 
-* Set the right workflow argument types
-* Can be "set" on start up of the application and the intended effect will be applied to the state of the schedule on the cluster automatically
+* Set arguments with the right types
+* Can be 'set' upon application startup, automatically applying the intended effect to the schedule's state on the cluster
 
 Queries and updates:
 
@@ -38,7 +38,7 @@ Queries and updates:
 * Return the right types
 * Registered functions match the right type signature
 
-This is a pretty nice list, so I think it's worth considering when building something new. I also believe it helps organize code better and provides a nice structure.
+This is a pretty nice list, so I think it's worth considering when building something new. I also believe it helps organize code better.
 
 Take a look at some example usage of this library:
 
@@ -118,4 +118,4 @@ func helloActivity(ctx context.Context, _ struct{}) (struct{}, error) {
 
 Be warned that in this first iteration not all temporal features are easily accessible and there are no escape hatches from the safety. I highly recommend it when starting a new project or service, but it may be difficult to retrofit into existing services if they use the full power of temporal. I'm looking for feedback on how to allow for incremental adoption and how to support more of temporal's features.
 
-If you are raedy to try it anyway, head over to https://github.com/vikstrous/tstemporal!
+If you are ready to try it anyway, head over to https://github.com/vikstrous/tstemporal!
