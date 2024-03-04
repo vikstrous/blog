@@ -1,11 +1,13 @@
 ---
-title: "tstemporal: a type-safe Temporal Go SDK wrapper"
+title: "tempts: a type-safe Temporal Go SDK wrapper"
 date: 2024-02-16T00:00:00Z
+aliases:
+- tstemporal-a-type-safe-temporal-go-sdk-wrapper
 ---
 
 Are you using [Temporal](temporal.io) and writing workflows in Go using their Go SDK? If so, I have something for you. Otherwise feel free to skip this blog post.
 
-I created a type-safe wrapper around the Temporal Go SDK called [tstemporal](https://github.com/vikstrous/tstemporal). It helps you avoid many common mistakes when working with Temporal workflows.
+I created a type-safe wrapper around the Temporal Go SDK called [tempts](https://github.com/vikstrous/tempts). It helps you avoid many common mistakes when working with Temporal workflows.
 
 The native SDK is powerful and flexible. Although this wrapper sacrifices some power and flexibility, it offers safety through its opinionated design.
 
@@ -50,32 +52,32 @@ import (
     "fmt"
     "time"
 
-    "github.com/vikstrous/tstemporal"
+    "github.com/vikstrous/tempts"
     "go.temporal.io/sdk/client"
     "go.temporal.io/sdk/worker"
     "go.temporal.io/sdk/workflow"
 )
 
 // Define a new namespace and task queue.
-var nsDefault = tstemporal.NewNamespace(client.DefaultNamespace)
-var queueMain = tstemporal.NewQueue(nsDefault, "main")
+var nsDefault = tempts.NewNamespace(client.DefaultNamespace)
+var queueMain = tempts.NewQueue(nsDefault, "main")
 
 // Define a workflow with no parameters and no return.
-var workflowTypeHello = tstemporal.NewWorkflow[struct{}, struct{}](queueMain, "HelloWorkflow")
+var workflowTypeHello = tempts.NewWorkflow[struct{}, struct{}](queueMain, "HelloWorkflow")
 
 // Define an activity with no parameters and no return.
-var activityTypeHello = tstemporal.NewActivity[struct{}, struct{}](queueMain, "HelloActivity")
+var activityTypeHello = tempts.NewActivity[struct{}, struct{}](queueMain, "HelloActivity")
 
 func main() {
     // Create a new client connected to the Temporal server.
-    c, err := tstemporal.Dial(client.Options{})
+    c, err := tempts.Dial(client.Options{})
     if err != nil {
         panic(err)
     }
     defer c.Close()
 
     // Register the workflow and activity in a new worker.
-    wrk, err := tstemporal.NewWorker(queueMain, []tstemporal.Registerable{
+    wrk, err := tempts.NewWorker(queueMain, []tempts.Registerable{
         workflowTypeHello.WithImplementation(helloWorkflow),
         activityTypeHello.WithImplementation(helloActivity),
     })
@@ -118,4 +120,4 @@ func helloActivity(ctx context.Context, _ struct{}) (struct{}, error) {
 
 Be warned that in this first iteration not all Temporal features are easily accessible and there are no escape hatches from the safety. I highly recommend it when starting a new project or service, but it may be difficult to retrofit into existing services if they use the full power of Temporal. I'm looking for feedback on how to allow for incremental adoption and how to support more of Temporal's features.
 
-If you are ready to try it anyway, head over to https://github.com/vikstrous/tstemporal! Open issues if you have any feedback.
+If you are ready to try it anyway, head over to https://github.com/vikstrous/tempts! Open issues if you have any feedback.

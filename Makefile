@@ -1,4 +1,4 @@
-gun:
+run:
 	./hugo server -p 3000 --buildDrafts --buildFuture --baseURL https://3000-viktor-debian2.cluster-vshwycxzfzanmxri3oyffx7nuq.cloudworkstations.dev/ --appendPort=false --navigateToChanged --liveReloadPort 443
 build:
 	./hugo
