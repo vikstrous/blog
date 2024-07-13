@@ -32,13 +32,17 @@ Let's talk about global state in programming. We've all made excuses for using i
 
 Let's take a look at what happens when you don't use global state.
 
+#### Composability
+
+If a function modifies global state, it's not composable. If it modifies its input, it can be run against multiple copies of that input and composed with other functions to build new things.
+
 #### Clarity and Predictability
 
 Functions that rely only on their inputs are easier to understand. If a struct doesn't have a random number generator, it's deterministic. No logger? No logging surprises.
 
 #### Easier Testing
 
-Without global state, tests are simpler and more reliable. You can run tests concurrently and use mock objects easily. More hardware equals faster test completion.
+Without global state, tests are simpler and more reliable. You can run tests concurrently and use mock objects easily. Tests can be spet up by just adding more hardware.
 
 #### Better Resource Management
 
