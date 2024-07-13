@@ -30,7 +30,7 @@ Let's talk about global state in programming. We've all made excuses for using i
 
 ### Benefits of Avoiding Global State
 
-Let's take a look at what happens when you don't use global state.
+So, what happens when you manage your state explicitly and pass it clearly between parts of your program? Let's dive in.
 
 #### Composability
 
