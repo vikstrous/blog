@@ -42,7 +42,7 @@ Functions that rely only on their inputs are easier to understand. If a struct d
 
 #### Easier Testing
 
-Without global state, tests are simpler and more reliable. You can run tests concurrently and use mock objects easily. Tests can be spet up by just adding more hardware.
+Without global state, tests are simpler and more reliable. You can run tests concurrently and use mock objects easily. Tests can be sped up by just adding more hardware.
 
 #### Better Resource Management
 
