@@ -34,7 +34,7 @@ Let's take a look at what happens when you don't use global state.
 
 #### Composability
 
-If a function modifies global state, it's not composable. If it modifies its input, it can be run against multiple copies of that input and composed with other functions to build new things.
+If a function modifies its input or produces new output, it can be run against multiple copies of that input and composed with other functions to process data in new ways. Functions that interact with each other through global state have limited composability.
 
 #### Clarity and Predictability
 
