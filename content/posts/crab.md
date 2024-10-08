@@ -16,10 +16,14 @@ Consider a more common scenario: you’re starting a new system, maybe for a sta
 
 The picture below shows what my toddler calls a "crab": a hair clip with legs that opens in half.
 
-![Hair clip](/images/crab.webp)
+![Hair clip](/images/crab/crab.webp)
 
 Now imagine your dependency graph looks like that crab. If you want to import anything, you have to import everything.
 
-![Crab diagram](/images/crab-diagram.png)
+![Crab diagram](/images/crab/crab-diagram.png)
 
-To avoid the crab pattern, create one package per feature, per table, or per product area, and organize code based on "what it does", not "what it is." By structuring your code around product functionality instead of technical similarities, you can keep your dependencies clean and your codebase manageable. Whether you're dealing with cloud clients, databases, or utility functions, breaking things into smaller, more focused packages helps prevent everything from becoming tangled together. Think in terms of what code and external dependencies you are introducing. Keeping dependencies isolated makes it easier to maintain, extend, and understand your code and avoids turning your project into a tangled crab-like mess.
+To avoid the crab pattern, create one package per feature, per table, or per product area, and organize code based on "what it does", not "what it is." Compare to this diagram which doesn't contain any crabs:
+
+![Non-crab diagram](/images/crab/no-crab.png)
+
+By structuring your code around product functionality instead of technical similarities, you can keep your dependencies clean and your codebase manageable. Whether you're dealing with cloud clients, databases, or utility functions, breaking things into smaller, more focused packages helps prevent everything from becoming tangled together. Think in terms of what code and external dependencies you are introducing. Keeping dependencies isolated makes it easier to maintain, extend, and understand your code and avoids turning your project into a tangled crab-like mess.
