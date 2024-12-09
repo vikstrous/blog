@@ -27,6 +27,10 @@ func HelloWorkflow(ctx workflow.Context,
 	return greeting + ", " + name + "!", nil
 }
 
+// Binding the implementation to the signature (unchanged, included for extra context)
+wrk := worker.New(c, "main", worker.Options{})
+wrk.RegisterWorkflowWithOptions(HelloWorkflow, workflow.RegisterOptions{Name: "Hello"})
+
 // In your application code:
 var output string
 temporalClient.ExecuteWorkflow(ctx, client.StartWorkflowOptions{}, "HelloWorkflow",
@@ -47,6 +51,11 @@ func HelloWorkflow(ctx workflow.Context, params HelloParams) (string, error) {
 }
 var Hello = tempts.NewWorkflowPositional[HelloParams, string](queueMain, "Hello")
 
+// Binding the implementation to the signature (unchanged, included for extra context)
+wrk, err := tempts.NewWorker(queueMain, []tempts.Registerable{
+  HelloWorkflow.WithImplementation(Hello),
+})
+
 // In your application code:
 Hello.Run(ctx, temporalClient, client.StartWorkflowOptions{}, HelloParams{
   Name:     "Viktor",
@@ -54,7 +63,7 @@ Hello.Run(ctx, temporalClient, client.StartWorkflowOptions{}, HelloParams{
 })
 ```
 
-Notice the use of `NewWorkflowPositional` instead of `NewWorkflow`. This is what allows you to introduce Tempts into this code without any breaking changes to the workflow's API.
+Notice the use of `NewWorkflowPositional` instead of `NewWorkflow`. Under the hood, Tempts uses reflection to create a wrapper function with positional arguments that translates the parameters into a single input object and then calls `HelloWorkflow`. This is what allows you to introduce Tempts into your code without any breaking changes to the workflow's API.
 
 ## Migrating away from positional arguments with Tempts
 
