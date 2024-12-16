@@ -33,7 +33,7 @@ wrk.RegisterWorkflowWithOptions(HelloWorkflow, workflow.RegisterOptions{Name: "H
 
 // In your application code:
 var output string
-temporalClient.ExecuteWorkflow(ctx, client.StartWorkflowOptions{}, "HelloWorkflow",
+temporalClient.ExecuteWorkflow(ctx, client.StartWorkflowOptions{}, "Hello",
     "Viktor",
     "Hello",
 ).Get(ctx, &output)
