@@ -6,7 +6,7 @@ serve-public:
 	cd public && python3 -m http.server --bind 0.0.0.0 3000
 
 install-hugo:
-	HUGO_VERSION=0.114.0 && \
+	HUGO_VERSION=0.147.7 && \
 	curl -sLO https://github.com/gohugoio/hugo/releases/download/v$${HUGO_VERSION}/hugo_$${HUGO_VERSION}_linux-amd64.tar.gz && \
 	tar zxvf hugo_$${HUGO_VERSION}_linux-amd64.tar.gz hugo && \
 	rm hugo_$${HUGO_VERSION}_linux-amd64.tar.gz

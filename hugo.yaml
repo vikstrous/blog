@@ -1,6 +1,6 @@
 baseURL: 'https://viktorstanchev.com/'
 languageCode: 'en-us'
-title: "Viktor Stanchev's blog"
+title: "Blog"
 theme: 'PaperMod'
 cleanDestinationDir: true
 permalinks:
@@ -20,7 +20,7 @@ params:
     socialIcons:
         - name: "github"
           url: "https://github.com/vikstrous"
-        - name: "twitter"
+        - name: "x"
           url: "https://twitter.com/vikstrous"
         - name: "linkedin"
           url: "https://www.linkedin.com/in/viktorstanchev/"

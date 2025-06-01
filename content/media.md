@@ -6,14 +6,14 @@ layout: "single"
 ---
 
 
-## 🎙️ Podcasts
+## Podcasts
 
 [The Debrief: Running better incidents from start to finish with Viktor Stanchev of Anchorage Digital](https://incident.io/thedebrief/episode-twenty-two)
 
 [Go time: Event-driven systems & architecture](https://changelog.com/gotime/297)
 
 
-## 🗣️ Conference Talks
+## Conference Talks
 
 [EthTaipei: What you see is what you get](https://www.youtube.com/watch?v=Mjd3kFm2v2M)
 
