@@ -9,6 +9,8 @@ menu:
     main:
         - name: Archive
           url: archives
+        - name: Media
+          url: media
 params:
     ShowShareButtons: true
     ShowCodeCopyButtons: true
